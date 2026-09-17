@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Electronics & Gadgets</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                💻 TechWorld
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                
+    <a href="products.html">🔍</a>
+    <a href="cart.html">🛒 <span id="cartCount">0</span></a>
+    <a href="account.html">👤</a>
+
+                
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover the Future of Technology</h1>
+
+            <p>
+                Explore the latest smartphones, laptops, audio devices,
+                smartwatches and more.
+            </p>
+
+            <a href="products.html" class="btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories Section -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <a href="products.html?category=smartphones" class="category-card">
+                <div class="category-icon">📱</div>
+                <h3>Smartphones</h3>
+                <p>Latest smartphones & mobiles</p>
+            </a>
+
+            <a href="products.html?category=Laptops%20%26%20Tablets" class="category-card">
+                <div class="category-icon">💻</div>
+                <h3>Laptops & Tablets</h3>
+                <p>Powerful devices for work & study</p>
+            </a>
+
+            <a href="products.html?category=audio%20%26%20wearables" class="category-card">
+                <div class="category-icon">🎧</div>
+                <h3>Audio & Wearables</h3>
+                <p>Headphones, earbuds & smartwatches</p>
+            </a>
+
+            <a href="products.html?category=accessories" class="category-card">
+                <div class="category-icon">🔌</div>
+                <h3>Accessories</h3>
+                <p>Chargers, cables & more</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="featured">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    📱
+                </div>
+
+                <h3>iPhone 15</h3>
+
+                <p>Powerful smartphone with amazing camera.</p>
+
+                <h4>₹69,999</h4>
+
+                <a href="product-detail.html?id=1" class="view-btn">View Details</a>
+
+                <button class="product-btn" onclick ="addtocart(1)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    💻
+                </div>
+
+                <h3>MacBook Air</h3>
+
+                <p>Lightweight laptop with powerful performance.</p>
+
+                <h4>₹99,999</h4>
+
+                <a href="product-detail.html?id=5" class="view-btn">View Details</a>
+
+                <button class="product-btn" onclick="addtocart(5)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🎧
+                </div>
+
+                <h3>Wireless Headphones</h3>
+
+                <p>Enjoy immersive sound without wires.</p>
+
+                <h4>₹4,999</h4>
+
+                <a href="product-detail.html?id=8" class="view-btn">View Details</a>
+
+                <button class="product-btn" onclick="addtocart(8)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    ⌚
+                </div>
+
+                <h3>Smart Watch</h3>
+
+                <p>Track your fitness and stay connected.</p>
+
+                <h4>₹3,999</h4>
+
+                <a href="product-detail.html?id=10" class="view-btn">View Details</a>
+
+                <button class="product-btn" onclick="addtocart(10)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Special Deal -->
+    <section class="deal">
+
+        <div>
+            <h2>🔥 Special Tech Deals</h2>
+
+            <p>
+                Get amazing discounts on selected electronics.
+            </p>
+
+            <a href="products.html" class="btn">
+                View Deals
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>💻 TechWorld</h3>
+                <p>Your trusted destination for modern technology.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📍 Chennai, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ support@techworld.com</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TechWorld. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

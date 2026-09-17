@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">💻 TechWorld</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            🛒
+        </div>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Checkout</h1>
+    <p>Complete your order securely</p>
+</section>
+
+<section class="checkout-section">
+
+    <div class="checkout-form">
+
+        <h2>Delivery Information</h2>
+
+        <form onsubmit="placeOrder(event)">
+
+            <label>Full Name</label>
+            <input type="text" id="fullName" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label>Address</label>
+            <textarea id="address" rows="4" required></textarea>
+
+            <label>City</label>
+            <input type="text" id="city" required>
+
+            <label>PIN Code</label>
+            <input type="text" id="pincode" required>
+
+            <h2>Payment Method</h2>
+
+            <div class="payment-options">
+
+                <label>
+                    <input type="radio" name="payment" value="COD" required>
+                    💵 Cash on Delivery
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="UPI">
+                    📱 UPI
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="Card">
+                    💳 Credit / Debit Card
+                </label>
+
+            </div>
+
+            <button type="submit" class="checkout-btn">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="checkout-summary">
+
+        <h2>Order Summary</h2>
+
+        <div id="checkoutItems"></div>
+
+        <hr>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="checkoutSubtotal">₹0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Delivery</span>
+            <span id="checkoutDelivery">₹0</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span id="checkoutTotal">₹0</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>💻 TechWorld</h3>
+            <p>Your trusted destination for modern technology.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📍 Chennai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ support@techworld.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 TechWorld. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

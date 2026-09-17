@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">💻 TechWorld</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <div class="nav-icons">🛒</div>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Welcome Back</h1>
+    <p>Login to your TechWorld account</p>
+</section>
+
+<section class="auth-section">
+
+    <div class="auth-card">
+
+        <h2>Login</h2>
+
+        <form onsubmit="loginUser(event)">
+
+            <label>Email Address</label>
+            <input type="email" id="loginEmail" required>
+
+            <div class="password-box">
+    <input type="password" id="loginPassword" required>
+    <button type="button" onclick="togglePassword('loginPassword', this)">👁️</button>
+
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+
+        <div>
+            <h3>💻 TechWorld</h3>
+            <p>Your trusted destination for modern technology.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📍 Chennai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ support@techworld.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 TechWorld. All Rights Reserved.
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

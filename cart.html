@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                💻 TechWorld
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                🛒
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Shopping Cart</h1>
+        <p>Review your selected products</p>
+    </section>
+
+
+    <!-- Cart -->
+    <section class="cart-section">
+
+        <div id="cartItems" class="cart-items">
+        </div>
+
+
+        <!-- Cart Summary -->
+        <div id="cartSummary" class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery</span>
+                <span id="delivery">₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="total">₹0</span>
+            </div>
+
+            <button
+                class="checkout-btn"
+                onclick="goToCheckout()">
+                Proceed to Checkout
+            </button>
+
+            <button
+                class="clear-cart-btn"
+                onclick="clearCart()">
+                Clear Cart
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>💻 TechWorld</h3>
+                <p>Your trusted destination for modern technology.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📍 Chennai, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ support@techworld.com</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TechWorld. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">💻 TechWorld</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            🛒
+        </div>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Product Details</h1>
+    <p>Explore product information</p>
+</section>
+
+<section class="detail-section">
+
+    <div class="detail-image">
+        <div id="detailIcon">📱</div>
+    </div>
+
+    <div class="detail-info">
+
+        <span id="detailCategory" class="product-category">
+            Smartphones
+        </span>
+
+        <h1 id="detailName">iPhone 15</h1>
+
+        <div id="detailRating" class="detail-rating">
+            ⭐ 4.8 / 5
+        </div>
+
+        <h2 id="detailPrice" class="detail-price">
+            ₹69,999
+        </h2>
+
+        <p id="detailDescription" class="detail-description">
+            Powerful smartphone with an advanced camera system.
+        </p>
+
+        <p id="detailStock" class="detail-stock">
+            ✅ In Stock
+        </p>
+
+        <div class="detail-actions">
+
+            <label>Quantity</label>
+
+            <div class="detail-quantity">
+                <button onclick="changeDetailQuantity(-1)">−</button>
+
+                <span id="detailQuantity">1</span>
+
+                <button onclick="changeDetailQuantity(1)">+</button>
+            </div>
+
+            <button class="checkout-btn" onclick="addDetailToCart()">
+                🛒 Add to Cart
+            </button>
+
+        </div>
+
+        <a href="products.html" class="back-link">
+            ← Back to Products
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>💻 TechWorld</h3>
+            <p>Your trusted destination for modern technology.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📍 Chennai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ support@techworld.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 TechWorld. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+<section class="about-content">
+    <h2>⭐ Customer Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ Excellent product!</p>
+    <p>⭐⭐⭐⭐ Very good quality and performance.</p>
+    <p>⭐⭐⭐⭐⭐ Worth the price!</p>
+</section>
